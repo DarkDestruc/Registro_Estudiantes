@@ -9,11 +9,11 @@ namespace Practica_Pre_Examen
 {
     public class Estudiante : INotifyPropertyChanged
     {
-        private string nombreEstud;
-        private string apellidoEstud;
-        private string materiaEstud;
+        public string nombreEstud;
+        public string apellidoEstud;
+        public string materiaEstud;
 
-        private string NombreEstud
+        public string NombreEstud
         {
             get => nombreEstud; set
             {
@@ -21,7 +21,7 @@ namespace Practica_Pre_Examen
                 this.OnPropertyChanged(nameof(NombreEstud));
             }
         }
-        private string ApellidoEstud
+        public string ApellidoEstud
         {
             get => apellidoEstud; set
             {
@@ -29,7 +29,7 @@ namespace Practica_Pre_Examen
                 this.OnPropertyChanged(nameof(ApellidoEstud));
             }
         }
-        private string MateriaEstud
+        public string MateriaEstud
         {
             get => materiaEstud; set
             {

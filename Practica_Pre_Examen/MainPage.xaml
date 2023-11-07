@@ -20,6 +20,7 @@
                 FontSize="18"
                 HorizontalOptions="Start" />
             <Entry
+                x:Name="NombreEntry"
                 HorizontalOptions="StartAndExpand"
                 Text="{Binding NombreEstud}"
                 WidthRequest="350"/>
@@ -30,6 +31,7 @@
                 HorizontalOptions="Start" />
 
             <Entry
+                x:Name="ApellidosEntry"
                 HorizontalOptions="StartAndExpand"
                 Text="{Binding ApellidoEstud}"
                 WidthRequest="350"/>
@@ -40,6 +42,7 @@
                 HorizontalOptions="Fill" />
 
             <Entry
+                x:Name="MateriaEntry"
                 HorizontalOptions="StartAndExpand"
                 Text="{Binding MateriaEstud}"
                 WidthRequest="350"/>

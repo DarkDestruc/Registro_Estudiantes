@@ -8,7 +8,8 @@
         {
             InitializeComponent();
             MiEstudiante = new Estudiante();
-            BindingContext = Estudiante();
+
+            BindingContext = MiEstudiante;
 
         }
 
@@ -17,7 +18,7 @@
 
         private void ConfirmarBtn_Clicked(object sender, EventArgs e)
         {
-            Display(MiEst);
+            DisplayAlert("Registro", MiEstudiante.NombreEstud + " sus datos se ingresaron correctamente.","ok");
         }
     }
     
