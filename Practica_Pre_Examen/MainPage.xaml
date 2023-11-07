@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Practica_Pre_Examen.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Start">
+            
+
+            <Label
+                Text="Registro de Estudiantes"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Ingrese Nombres:"
+                FontSize="18"
+                HorizontalOptions="Start" />
+            <Entry
+                HorizontalOptions="StartAndExpand"
+                Text="{Binding NombreEstud}"
+                WidthRequest="350"/>
+
+            <Label
+                Text="Ingrese Apellidos:"
+                FontSize="18"
+                HorizontalOptions="Start" />
+
+            <Entry
+                HorizontalOptions="StartAndExpand"
+                Text="{Binding ApellidoEstud}"
+                WidthRequest="350"/>
+
+            <Label
+                Text="Ingrese Materia:"
+                FontSize="18"
+                HorizontalOptions="Fill" />
+
+            <Entry
+                HorizontalOptions="StartAndExpand"
+                Text="{Binding MateriaEstud}"
+                WidthRequest="350"/>
+
+
+            <Button
+                x:Name="ConfirmarBtn"
+                Text="Registrar"
+                Clicked="ConfirmarBtn_Clicked"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
