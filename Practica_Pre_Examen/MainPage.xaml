@@ -39,7 +39,7 @@
             <Label
                 Text="Ingrese Materia:"
                 FontSize="18"
-                HorizontalOptions="Fill" />
+                HorizontalOptions="Start" />
 
             <Entry
                 x:Name="MateriaEntry"
@@ -50,7 +50,7 @@
 
             <Button
                 x:Name="ConfirmarBtn"
-                Text="Registrar"
+                Text="Confirmar"
                 Clicked="ConfirmarBtn_Clicked"
                 HorizontalOptions="Center" />
 
